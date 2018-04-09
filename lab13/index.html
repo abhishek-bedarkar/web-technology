@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bill Payment</title>
+    <!-- Angular js ki online file hai yeh lab meh nahi chalegi, offlline file downloaded hogi usko js file k jaise embed karna -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+<body>
+
+<div >
+
+    <strong>billing details:</strong>
+    <br>
+    <table>
+        <thead>
+        <tr>
+            <th>Product Name</th>
+            <th>Price </th>
+            <th>Qty</th>
+            <th>Total</th>
+        </tr>
+        </thead>
+        <tbody ng-app="">
+            <tr>
+                <td><input type="text" ng-model="productName1"></td>
+                <td><input type="text" ng-model="price1"></td>
+                <td><input type="text" ng-model="qty1"></td>
+                <td>{{ price1 * qty1}}</td>
+            </tr>
+            <tr>
+                <td><input type="text" ng-model="productName2"></td>
+                <td><input type="text" ng-model="price2"></td>
+                <td><input type="text" ng-model="qty2"></td>
+                <td> {{ price2 * qty2 }} </td>
+            </tr>
+            <tr>
+                <td><input type="text" ng-model="productName3"></td>
+                <td><input type="text" ng-model="price3"></td>
+                <td><input type="text" ng-model="qty3"></td>
+                <td> {{ price3 * qty3 }} </td>
+            </tr>
+            <tr>
+                <td><input type="text" ng-model="productName4"></td>
+                <td><input type="text" ng-model="price4"></td>
+                <td><input type="text" ng-model="qty4"></td>
+                <td> {{ price4 * qty4 }} </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Total :</td>
+                <td >{{ price1 * qty1 + price2 * qty2+ price3 * qty3 + price4 * qty4 }}</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+
+</div>
+
+
+</body>
+</html>

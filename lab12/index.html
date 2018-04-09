@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body ng-app="">
+
+
+<form name="myForm" style="margin-top: 200px; margin-left: 500px; font-size: larger;">
+    <p ng-show="myForm.email.$valid" style="color:green;">{{name}} email is verified !!</p>
+
+    <label>Name  :  &nbsp; &nbsp; &nbsp;</label><input name="name" type="text" ng-model="name" size="30"><br><br>
+    <label>Email : &nbsp; &nbsp; &nbsp; </label><input name="email" ng-model="myEmail" type="email" size="30" required><br><br>
+    <label>Password :  </label><input name="pass" ng-model="myPass" type="password" size="30" required><br><br>
+    <button>submit</button>
+</form>
+
+
+</body>
+<style>
+    input.ng-invalid {
+        background-color: lightpink;
+    }
+    input.ng-valid {
+        background-color: lightgreen;
+    }
+</style>
+</html>
